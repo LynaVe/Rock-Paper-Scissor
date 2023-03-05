@@ -19,6 +19,7 @@ img{
     max-width:500px;
     border-radius: 50%;
 }
+
 button{
     border-radius: 50%;
 }
@@ -34,6 +35,7 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    transition:opacity 400ms ease;
     
 }
 
@@ -47,5 +49,32 @@ h1{
     text-align: center;
     font-size: 30px;
     margin: 90px;
+    margin-bottom: 20px;
 }
 
+
+.body-container:hover > .button-container {
+opacity: 0.3;
+}
+
+
+.body-container:hover > .button-container:hover {
+    opacity: 1;
+}
+    
+.winCount{
+    display: flex;
+    margin-top: 0px;
+}
+.winCount-content{
+    margin: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+#reset{
+    border-radius: 7%;
+    width: 200px;
+    height: 50px;
+}
