@@ -4,9 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="rps.js"></script>
+    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="rps-style.css">
+    <script src="rps.js" defer></script>
+</head>
 <body>
-    
+    <div class="button-main-container">
+      
+        <div>
+            <h1>Choose Rock, Paper, Scissors</h1>
+        </div>
+
+        <div class="winCount">
+            <div class="winCount-content">
+                <span>Player wins: </span><span id="player-count">0</span>
+            </div>
+            <div class="winCount-content">
+                <span>Computer wins: </span><span id="computer-count">0</span>
+            </div>
+        </div>
+
+        <div class="body-container">
+        <div class="button-container">
+            <button id="btn-rock" type="submit">
+                <img src="./rps-ui-images/rock.png" alt="rock-choice"  />
+            </button>
+            <p class="button-text">Rock</p>
+        </div>
+
+        <div class="button-container">
+            <button id="btn-paper" type="submit">
+                <img src="./rps-ui-images/paper.png" alt="paper-choice"  />
+            </button>
+            <p class="button-text">Paper</p>
+         </div>
+
+         <div class="button-container">
+            <button id="btn-scissors" type="submit">
+                <img src="./rps-ui-images/scissor.webp" alt="scissor-choice" />
+            </button>
+            <p class="button-text">Scissors</p>
+            </div>
+        </div>
+
+        <div class="reset">
+            <button id="reset">Reset</button>
+        </div>
+    </div>
 </body>
 </html>
